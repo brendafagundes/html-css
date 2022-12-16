@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midías em HTML 5</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="Imagens/p1.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="Imagens/m2.png" type="image/png">
+        <img src="Imagens/g3.png" alt="imagem flexivel">
+    </picture>
+    <p>reproduzindo audio dem HTML5:</p>
+    <audio src="midias/guanacast-33.mp3" controls autoplay></audio>
+    <p>outra maneira de colocar audio no site:</p>
+    <audio preload="auto" autoplay controls>
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <p>Caso o audio nao seja reproduzido clique <a href="midias/guanacast-33.mp3">aqui</a></p>
+    </audio>
+    <p>reproduzindo video no HTML5</p>
+    <video src="midias/file.mp4" width= "300" poster="Imagens/temporalmodificado.jpeg" controls></video>
+    <p>inserindo videos do youtube</p>
+    <iframe width="300" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>
