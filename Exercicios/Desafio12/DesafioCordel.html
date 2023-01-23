@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,72 +15,62 @@
             --fonte2: 'Passion One', cursive;
             --fonte3: 'Sriracha', cursive;
         }
-        .head{
-            color: white;
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
             background-color: black;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            color: white;
             text-align: center;
-            
+            padding: 2%;
         }
-
+       
         header > h1 {
-            padding-top: 50px;
+            padding top: 50px;
             font-variant: small-caps;
-            font-family: var(--fonte2);
-            font-size: 10px;
-
-        }
-        header > p {
-            padding-top: 50px;
-            font-family: var(--fonte1);
+            font-family: var(--fonte2) ;
+            font-size: 10vh;
             
 
         }
 
-        a{
+        header > p {
+            padding-top: 30px;
+            padding-bottom: 50px;
+            font-size: 1.5em;
+        }
+        header a, footer a{
             color: white;
             text-decoration: none;
             font-weight: bolder;
         }
-        a:hover{
+        header a:hover, footer a :hover{
             text-decoration: underline;
-        }
-        
-        body{
-            background-color: white;
-            min-height: 100vh;
-            font-family: var(--fonte3);
-            font-size: 35px;
         }
         section{
             padding-top: 10vh;
             padding-bottom: 10vh;
-            text-align: left;
             line-height: 2em;
             padding-left: 30px;
+            font-family: var(--fonte3);
+            font-size: 5vh;
+        }
+            section.normal{
+                background-color: white;
+                color: black;
+            }
+            section.imagem{
+                background-color: rgb(51, 51, 51);
+                color: white;
+            }
+            section.imagem > p{
+                display: inline-block;
+                padding: 5px;
+                background-color: rgba(0, 0, 0, 0.245);
 
-
-        }
-        section.1{
-            background-color: white;
-            text-align: left;
-            
-        }
-        section.imagem > p {
-            width: 500px;
-            background-color: rgba(0, 0, 0, 0.174);
-            background-image: url(imagens/._background001.jpg);
-            color: white;
-
-            
-        }
-        .es3{
-            
-        }
-        .es4{
-            background-image: url(imagens/._bacjgound002.jpg);
-        }
+            }
+     
         footer{
             background-color: black;
             text-align: center;
@@ -90,11 +80,12 @@
         }
 
     </style>
-</head>
-<div class="head">
+<header>
+
 <h1>Cordel Moderno</h1>
 <p>Por <a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank"> Milton Duarte</a></p>
-</div>
+
+</header>
 <body>
     <section>
         <p>
