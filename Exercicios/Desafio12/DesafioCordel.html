@@ -56,6 +56,10 @@
             font-family: var(--fonte3);
             font-size: 5vh;
         }
+        section > p{
+            padding-bottom: 2em;
+
+        }
             section.normal{
                 background-color: white;
                 color: black;
@@ -63,12 +67,25 @@
             section.imagem{
                 background-color: rgb(51, 51, 51);
                 color: white;
+                box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.46);
+                background-attachment: fixed;
             }
             section.imagem > p{
                 display: inline-block;
                 padding: 5px;
-                background-color: rgba(0, 0, 0, 0.245);
+                background-color: rgba(0, 0, 0, 0.505);
+                text-shadow: 1px 1px 0px black;
 
+            }
+            section#img01{
+               background-image: url(../Desafio12/imagens/img001.jpg);
+               background-position: right center;
+               background-size: cover;
+            }
+            section#img02{
+                background-image: url('../Desafio12/imagens/imag002.jpg');
+                background-position: right center;
+                background-size: cover;
             }
      
         footer{
@@ -98,7 +115,7 @@ Antes que eu caduque<br>
 Vou dizer tudo em poesia.<br>
         </p>
     </section>
-    <section class="imagem" >
+    <section class="imagem" id="img01">
         <p>
             Não é mais como era antes<br>
 É tudo abreviado<br>
@@ -131,7 +148,7 @@ E um coração desenhado.<br>
 
         
     </section>
-    <section class="imagem">
+    <section class="imagem" id="img02">
         
             <p>Tenho saudade das cartas<br>
                 Escritas com a própria mão<br>
